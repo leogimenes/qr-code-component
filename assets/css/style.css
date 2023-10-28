@@ -1,0 +1,94 @@
+.attribution {
+    padding-top: 15px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --light-grey: #D5e1ef;
+    --blue-shade: #3685ff;
+    --dark-navy: #1f314f;
+    --grey: #7d889e;
+    --white: #fff;
+}
+
+
+body {
+    font-family: Outfit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-grey, #D5e1ef);
+    margin: 0;
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 375px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: calc((100vh * 0.0921) * 2) 0px calc((100vh * 0.0927) * 2) 0px;
+}
+
+.qr-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 320px;
+    height: 497px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.qr-card {
+    width: 288px;
+    height: 288px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: url("../images/image-qr-code.png") no-repeat;
+    background-size: cover;
+}
+
+.qr-card-title {
+    display: flex;
+    width: 288px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: var(--dark-navy, #1F314F);
+    text-align: center;
+
+    /* Heading */
+    font-size: 22px;
+    font-family: Outfit;
+    font-weight: 700;
+    content: "Improve your front-end skills by building projects";
+}
+
+.qr-card-text {
+    display: flex;
+    width: 256px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: var(--grey, #7D889E);
+    text-align: center;
+
+    /* Body */
+    font-size: 15px;
+    font-family: Outfit;
+    letter-spacing: 0.188px;
+    content: "Scan the QR code to visit Frontend Mentor and take your coding skills to the next level"
+}
